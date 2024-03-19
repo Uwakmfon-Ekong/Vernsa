@@ -221,10 +221,10 @@ nav {
   font-weight: 600;
 }
 .login-text {
-  font-family:"Mulish";
-font-size: 14px;
-text-align: center;
-padding-top: 1rem;
+  font-family: "Mulish";
+  font-size: 14px;
+  text-align: center;
+  padding-top: 1rem;
   display: none;
 }
 .whakee {
@@ -269,7 +269,7 @@ label {
 }
 input {
   padding: 16px;
-  border: 0.8px solid rgba(149, 151, 153, 1);
+  border: 0.8px solid rgba(107, 108, 111, 1);
   border-radius: 6px;
   outline: none;
 }
@@ -287,6 +287,15 @@ input {
 .wrapper-right h3 {
   text-align: center;
   padding-bottom: 1rem;
+}
+.wrapper-right p{
+  text-align: center;
+  padding-bottom: 0.5rem;
+  font-family: Mulish;
+font-size: 14px;
+font-weight: 400;
+line-height: 21px;
+
 }
 .privacy {
   padding: 0.5rem 0;
@@ -450,9 +459,9 @@ input {
   .leftside {
     display: flex;
     flex-direction: column;
-    height: 35vh;
-     width: 100%;
-      background: rgba(255, 255, 255, 1);
+    height: 40vh;
+    width: 100%;
+    background: rgba(255, 255, 255, 1);
   }
   .rightside {
     width: 100%;
@@ -461,10 +470,11 @@ input {
     /* display: flex; */
   }
   .wrapper {
-    padding: 2rem;
+    padding:0rem 2rem;
     width: 100%;
+    margin-top: -5rem;
   }
-  .footer{
+  .footer {
     display: none;
   }
   .logo1 {
@@ -483,16 +493,16 @@ input {
     width: 100px;
     height: 100px;
   }
-.wrapper h3{
-  display: none;
-}
+  .wrapper h3 {
+    display: none;
+  }
   .welcome {
     padding-top: 1rem;
     padding-left: 0rem;
     padding-right: 0rem;
     color: rgba(0, 0, 0, 1);
   }
-  .welcome p{
+  .welcome p {
     font-size: 14px;
   }
   .welcome-div {
@@ -513,7 +523,29 @@ input {
   .whakee {
     color: #23c65d;
   }
-  .login-text{
+  .login-text {
     display: block;
   }
+  .wrapper-right input {
+  border-radius: 6px;
+  outline: none;
+  background: rgba(255, 255, 255, 1);
+  border: 0.8px solid rgba(107, 108, 111, 1)
+}
+.wrapper-right h3 {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+.wrapper-right{
+  background:rgba(255, 255, 255, 1) ;
+  padding: 0 1rem;
+  width: 100%;
+  height: 100vh;
+  margin-top: 5rem;
+  color: rgba(30, 30, 30, 1);
+  /* border: 2px solid red; */
+}
+body{
+  background: rgba(255, 255, 255, 1);
+}
 }
