@@ -14,32 +14,47 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="forgot-wrapper">
+    <div class="set-wrapper">
       <div class="logo">
         <h1><span>V</span>ERNSA</h1>
       </div>
-      <div class="forgot-mask">
+      <div class="set-mask">
         <div class="key">
           <img src="Frame 963.svg" alt=""/>
         </div>
         <h3>Set new password</h3>
         <p class="worries">Your password must be different from previously used passwords</p>
         <form>
-          <div class="">
-            <label for="email">Old password</label>
-            
-            <!-- <img src="Group 14.svg" alt=""> -->
+          <div class="password">
+            <label for="password">Old password</label>
             <input
-              type="text"
-              name="email"
-              id="email"
+              type="password"
+              name="password"
+              id="password"
               placeholder="Enter old password"
             />
           </div>
-          <button class="">Send</button>
-          <div class="noaccount">
-            <p>Have an account?</p>
-            <p class="sig"><a href="signup.html">Login</a></p>
+          <div class="password">
+            <label for="newpassword">New password</label>
+            <input
+              type="password"
+              name="newpassword"
+              id="newpassword"
+              placeholder="Enter new password"
+            />
+          </div>
+          <div class="password ">
+            <label for="confirmpassword">Confirm password</label>
+            <input
+              type="password"
+              name="confirmpassword"
+              id="confirmpassword"
+              placeholder="Confirm password"
+            />
+          </div>
+          <button class="reset-button"><a href="success.html">Reset</a></button>
+          <div class="return">
+            <p class="lo"><a href="login.html"><i class="fa-solid fa-arrow-left"></i>Back to Login</a></p>
           </div>
         </form>
       </div>

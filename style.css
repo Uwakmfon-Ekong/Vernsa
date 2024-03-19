@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Poller+One&family=Roboto:wght@100&family=Rubik+Doodle+Triangles&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -120,6 +120,9 @@ nav {
   font-family: "Poller One", serif;
   /* border: 2px solid red; */
 }
+.logo1 img {
+  display: none;
+}
 .logo1 span {
   font-size: 50px;
   font-family: cursive;
@@ -186,6 +189,11 @@ nav {
   justify-content: space-between;
   padding-top: 0.8rem;
   font-size: 12px;
+  padding-bottom: 1rem;
+}
+.account {
+  display: flex;
+  gap: 5px;
 }
 .wrapper button {
   background: rgba(35, 198, 93, 1);
@@ -211,6 +219,13 @@ nav {
 .welcome p {
   font-size: 35px;
   font-weight: 600;
+}
+.login-text {
+  font-family:"Mulish";
+font-size: 14px;
+text-align: center;
+padding-top: 1rem;
+  display: none;
 }
 .whakee {
   color: black;
@@ -242,8 +257,11 @@ nav {
   flex-direction: column;
   padding: 0.5rem 0;
 }
-.forgot {
-  padding-bottom: 20px;
+
+.forgot a {
+  text-decoration: none;
+  font-size: 12px;
+  color: #23c65d;
 }
 label {
   padding-bottom: 8px;
@@ -286,7 +304,7 @@ input {
 }
 .forgot-mask {
   background: rgba(252, 252, 252, 1);
-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.2);
   width: 50%;
   margin: auto;
   border-radius: 10px;
@@ -331,40 +349,171 @@ box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.2);
   text-align: center;
   padding-bottom: 0.5rem;
 }
-.lines{
+.lines {
   display: flex;
   width: 100%;
   padding: 2rem 0;
   gap: 10px;
   justify-content: center;
 }
-.yo{
+.yo {
   width: 10%;
   height: 3px;
   background: #23c65d;
   display: flex;
 }
-.success{
-   background: rgba(252, 252, 252, 1);
+.success {
+  background: rgba(252, 252, 252, 1);
   width: 35%;
   margin: auto;
   border-radius: 10px;
   padding: 48px;
   box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.2);
-
 }
-.success h3{
+.success h3 {
   font-style: italic;
-  padding:0.5rem 0;
+  padding: 0.5rem 0;
 }
-.success p{
+.success p {
   padding-bottom: 2rem;
 }
-.success button{
-   background: rgba(35, 198, 93, 1);
+.success button {
+  background: rgba(35, 198, 93, 1);
   border: none;
   padding: 15px 0;
   width: 100%;
   color: #fff;
   border-radius: 5px;
+}
+.set-mask {
+  background: rgba(252, 252, 252, 1);
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.2);
+  width: 30%;
+  margin: auto;
+  border-radius: 10px;
+  padding: 24px;
+}
+.set-wrapper {
+  background: rgba(246, 246, 246, 1);
+  display: flex;
+  flex-direction: column;
+  font-family: "Lato", sans-serif;
+  padding: 3rem;
+}
+.set-wrapper h3 {
+  font-family: Lato;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: rgba(35, 198, 93, 1);
+  padding-bottom: 0.5rem;
+}
+.lo a {
+  text-decoration: none;
+  color: #1d1d1f;
+  text-align: center;
+}
+.lo {
+  text-align: center;
+  font-size: 12px;
+  padding: 1rem 0;
+}
+.reset-button {
+  background: rgba(35, 198, 93, 1);
+  padding: 16px;
+  gap: 8px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  width: 100%;
+}
+.reset-button a {
+  text-decoration: none;
+  color: white;
+}
+.proceed a {
+  text-decoration: none;
+  color: white;
+}
+.success-button a {
+  text-decoration: none;
+  color: white;
+}
+/* MEDIA QUERIES */
+@media screen and (max-width: 600px) {
+  .login-container {
+    display: block;
+    width: 100%;
+  }
+  .leftside {
+    display: flex;
+    flex-direction: column;
+    height: 35vh;
+     width: 100%;
+      background: rgba(255, 255, 255, 1);
+  }
+  .rightside {
+    width: 100%;
+    background: rgba(255, 255, 255, 1);
+    height: 100vh;
+    /* display: flex; */
+  }
+  .wrapper {
+    padding: 2rem;
+    width: 100%;
+  }
+  .footer{
+    display: none;
+  }
+  .logo1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 5rem;
+  }
+  .logo1 h1 {
+    display: none;
+  }
+  .logo1 img {
+    display: flex;
+    background: #23c65d;
+    width: 100px;
+    height: 100px;
+  }
+.wrapper h3{
+  display: none;
+}
+  .welcome {
+    padding-top: 1rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    color: rgba(0, 0, 0, 1);
+  }
+  .welcome p{
+    font-size: 14px;
+  }
+  .welcome-div {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+  }
+  .welcome-div p {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  .whakee {
+    color: #23c65d;
+  }
+  .login-text{
+    display: block;
+  }
 }
